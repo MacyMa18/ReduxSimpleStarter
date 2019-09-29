@@ -1,9 +1,18 @@
-import React, { Component } from 'react';
+import React from 'react';
+import SongList from './SongList';
+import SongDetail from './SongDetail';
 
-export default class App extends Component {
-  render() {
-    return (
-      <div>React simple starter</div>
-    );
-  }
-}
+const App = () => {
+  return (
+    <div>
+      <div>
+        <SongList />
+      </div>
+      <div>
+        <SongDetail />
+      </div>
+    </div>
+  );
+};
+
+export default App;
